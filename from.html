@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="from.js"></script>
+    </head>
+    <body>
+        <form name="registeration">
+            <div>
+                <label>Enter Name</label>
+                <input type="text" name="userName" id="userName">
+                <input id="erroruserName"></div>
+            </div>
+            <div>
+                <label>Enter Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label>Enter Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label>Select gender</label>
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female"> female
+                <input type="radio" name="gender" value="others"> others
+                <div id="errorGender" ></div>
+            </div>
+            <div>
+                <label>Select City</label>
+                <select name="city">
+                    <option value="0">--city--</option>
+                    <option value="bang">Banglore</option>
+                    <option value="mangalore">Manglore</option>
+                </select>
+                <div id="errorCity"></div>
+            </div>
+            <!--document.formname.controlname.checked-->
+            <!--document.register.gender.checked-->
+            <button type="button"onclick="register()">Submit</button>
+        </form>
+    </body>
+</html>
